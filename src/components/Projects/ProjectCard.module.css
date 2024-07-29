@@ -1,0 +1,122 @@
+@import "../../vars.css";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
+  box-shadow: 0 16px 14px 0 #04152d;
+  padding: 18px 24px;
+  max-width: 345px;
+  min-height: 500px; /* Adjust this value as needed */
+  transition: background-image 0.4s ease ,  transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative; /* Added for the pseudo-element */
+  overflow: hidden; /* Ensures pseudo-element stays within bounds */
+  box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures spacing between items */
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.42) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s ease; /* Smooth transition for background size */
+  border-radius: 10px; /* Match the container's border radius */
+  z-index: 1; /* Set z-index lower than links */
+}
+
+.container:hover::before {
+  background-size: 100% 100%; /* Expand the gradient background on hover */
+}
+
+.container:hover {
+  transform: translateY(-10px); /* Move the card up */
+  box-shadow: 0 24px 20px 0 #04152d; /* Increase the shadow for a pop-up effect */
+}
+
+
+.image {
+  margin-bottom: 26px;
+  z-index: 2; /* Ensure image is above pseudo-element */
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 700;
+  min-height: 50px; 
+  z-index: 2; /* Ensure title is above pseudo-element */
+}
+
+.description {
+  margin-top: 6px;
+  font-size: 25px;
+  font-weight: 400;
+  min-height: 80px; /* Ensure description has a minimum height */
+  z-index: 2; /* Ensure description is above pseudo-element */
+}
+
+.skills {
+  width: 100%;
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  z-index: 2; /* Ensure skills are above pseudo-element */
+}
+
+.skill {
+  font-size: 25px;
+  font-weight: 400;
+  border-radius: 100px;
+  background: var(--color-dark);
+  padding: 2px 22px;
+  z-index: 2; /* Ensure skill items are above pseudo-element */
+}
+
+.links {
+  width: 100%;
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-around;
+  z-index: 2; /* Ensure links are above pseudo-element */
+}
+
+
+.title, .description, .skills, .links {
+  margin: 0; /* Reset margins to maintain consistency */
+}
+
+.image {
+  margin-bottom: 26px; /* Consistent margin for the image */
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 30px;
+  font-weight: 600;
+  border-radius: 100px;
+  background: var(--color-primary);
+  padding: 1px 22px;
+  z-index: 2; /* Ensure link items are above pseudo-element */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.link:hover {
+  background-color: var(--color-primary-dark); /* Darker background on hover */
+  transform: scale(1.05); /* Slightly scales up on hover */
+}

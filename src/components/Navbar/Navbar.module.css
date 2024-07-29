@@ -1,0 +1,112 @@
+@import "../../vars.css";
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; /* Add padding */
+  z-index: 2;
+  margin: 20px 10% 0; /* Add top margin */
+  background-color: #1a2a4f;
+  border-radius: 500px; /* Rounded corners */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+.menuBtn {
+  display: none;
+}
+
+.menu {
+  display: flex;
+}
+
+.menuItems {
+  display: flex;
+  gap: 47px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menuItems a {
+  font-size: 20px;
+  color: #ffffff; /* White text */
+  text-decoration: none;
+  transition: background-image 0.3s ease;
+  padding: 10px; /* Add padding */
+  border-radius: 5px; /* Ensure rounded corners for the links */
+}
+
+.menuItems a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  /* border-radius: 5px; */
+}
+
+@media screen and (max-width: 830px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #1a2a4f;/* Ensure the background is present in mobile view */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px 10% 0; /* Add top margin */
+  }
+
+  .menu {
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 11px;
+    z-index: 3;
+  }
+
+  .menuBtn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menuItems {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    border-radius: 10px;
+    background: rgb(25, 55, 109);
+    background: linear-gradient(
+      0deg,
+      rgba(25, 55, 109, 0.2) 0%,
+      rgba(25, 55, 109, 1) 100%
+    );
+    padding: 24px 33px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .menuOpen {
+    display: flex;
+    z-index: 1;
+  }
+
+  .menuItems a {
+    font-size: 20px;
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    transition: background-image 0.3s ease;
+    padding: 10px; /* Add padding */
+    border-radius: 5px; /* Ensure rounded corners for the links */
+  }
+
+  .menuItems a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    /* border-radius: 5px; */
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Harshitha Kankatala – Portfolio Website",
+    "imageSrc": "projects/pro.png",
+    "description": "Created a responsive portfolio website with React and Tailwind CSS, featuring interactive elements, animations, and a clean design.",
+    "skills": ["React", "Tailwind CSS"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "MERN Social Website",
+    "imageSrc": "projects/pro.png",
+    "description": "Built a full-stack MERN app with authentication, likes, dark mode, and responsive design using Material-UI",
+    "skills": ["MongoDB", "Express.js", "React.js", "Node.js", "Material-UI"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/harshi-1234/soc-website"
+  },
+  {
+    "title": "Enhanced Onboard Digital Transactions at Scoot. ",
+    "imageSrc": "projects/pro.png",
+    "description": "Designed and developed a user-focused application for Scoot, enhancing onboard digital transactions with impactful UI tailored to the aviation and travel industry",
+    "skills": ["UI/UX Design"],
+    "demo": "https://www.figma.com/proto/gIvQmIKc2o1mShsk4Sa5XJ/Untitled?node-id=338-4274&t=7EJJuQSpwwz2iRGe-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=338%3A1890",
+    "source": "https://www.figma.com/design/gIvQmIKc2o1mShsk4Sa5XJ/Untitled?node-id=0-1&t=U1vtbWWNay3owHdR-0"
+  },
+  {
+    "title": "WordPress Website Deployment on AWS.",
+    "imageSrc": "projects/pro.png",
+    "description": "Set up a WordPress site on AWS using EC2 and RDS, ensured public access with Route 53, and implemented high availability with ASG in a VPC, showcasing AWS management skills.",
+    "skills": ["Aws","Ec2","Rds","Route53","Wordpress"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Serverless web application on AWS ",
+    "imageSrc": "projects/pro.png",
+    "description": "Developed and deployed a serverless web app on AWS using Lambda, API Gateway, and DynamoDB, implementing scalable and cost-efficient architecture.",
+    "skills": ["Aws Lambda", "Api Gateway", "DynamoDB" , "Serverless Architecture"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Article Contributor, Geeks for Geeks",
+    "imageSrc": "projects/pro.png",
+    "description":"Contributed to the article 'Continuous Deployment to Kubernetes with GitOps,' showcasing practical knowledge in CI/CD processes, Kubernetes, and GitOps methodology.",
+    "skills":["CI/CD", "Kubernetes", "GitOps"],
+    "source": "https://www.geeksforgeeks.org/continuous-deployment-to-kubernetes-with-gitops/"
+  }
+  
+]
