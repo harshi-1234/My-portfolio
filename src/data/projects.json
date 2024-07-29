@@ -35,7 +35,7 @@
     "title": "Serverless web application on AWS ",
     "imageSrc": "projects/pro.png",
     "description": "Developed and deployed a serverless web app on AWS using Lambda, API Gateway, and DynamoDB, implementing scalable and cost-efficient architecture.",
-    "skills": ["Aws Lambda", "Api Gateway", "DynamoDB" , "Serverless Architecture"],
+    "skills": ["Aws Lambda", "Api Gateway", "DynamoDB"],
     "demo": "https://www.example.com",
     "source": "https://www.github.com"
   },

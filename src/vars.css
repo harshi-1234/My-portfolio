@@ -1,3 +1,7 @@
+/* In vars.css */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+
 :root {
   /* Colours */
   --color-text: #fff;
@@ -6,6 +10,29 @@
   --color-dark: #0b2447;
   --color-bg: #04152d;
 
+  
   /* Fonts */
-  --font-roboto: "Roboto";
+  --font-primary: "Lora", serif; /* Update the font here */
+}
+
+/* Apply the primary font to all elements */
+body {
+  font-family: var(--font-primary);
+  color: var(--color-text); /* Ensure text color is applied */
+  background-color: var(--color-bg); /* Ensure background color is applied */
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span, div {
+  font-family: var(--font-primary); /* Apply font to all text elements */
+}
+
+/* Optionally, you can override this for specific elements if needed */
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
 }
