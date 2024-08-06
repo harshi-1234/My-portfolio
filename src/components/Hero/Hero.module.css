@@ -93,17 +93,60 @@
 
 @media screen and (max-width: 830px) {
   .container {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    align-items: center; /* Center align content for smaller screens */
+    margin-left: 5%; /* Reduced margin for smaller screens */
+    margin-right: 5%; /* Reduced margin for smaller screens */
   }
 
   .content {
     align-items: center;
-    max-width: 90%; /* Ensure content does not overlap */
+    max-width: 100%; /* Ensure content does not overlap */
+    text-align: center; /* Center align text for smaller screens */
+  }
+
+  .title {
+    font-size: 35px; /* Reduced font size */
+  }
+
+  .description {
+    font-size: 20px; /* Reduced font size */
+    margin-bottom: 30px; /* Reduced margin */
+  }
+
+  .contactBtn {
+    font-size: 1.5em; /* Reduced font size */
+    padding: 12px 20px; /* Adjusted padding */
   }
 
   .heroImg {
-    width: 80%;
-    max-width: 200px; /* Maximum width for small screens */
+    width: 70%; /* Adjusted width for smaller screens */
+    max-width: 250px; /* Adjusted maximum width for smaller screens */
   }
 
+  .topBlur,
+  .bottomBlur {
+    display: none; /* Hide blur effects for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 30px; /* Further reduced font size */
+  }
+
+  .description {
+    font-size: 18px; /* Further reduced font size */
+    margin-bottom: 20px; /* Further reduced margin */
+  }
+
+  .contactBtn {
+    font-size: 1.2em; /* Further reduced font size */
+    padding: 10px 18px; /* Further adjusted padding */
+  }
+
+  .heroImg {
+    width: 80%; /* Further adjusted width for very small screens */
+    max-width: 200px; /* Further adjusted maximum width for very small screens */
+  }
 }
