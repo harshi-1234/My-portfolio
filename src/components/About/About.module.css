@@ -69,8 +69,9 @@
 @media screen and (max-width: 830px) {
   .container {
     background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 30px 15px; /* Adjusted padding */
+    margin-left: 5%;  /* Reduced margin for smaller screens */
+    margin-right: 5%; /* Reduced margin for smaller screens */
   }
 
   .content {
@@ -83,10 +84,40 @@
 
   .aboutItems {
     margin-top: 29px;
+    gap: 30px; /* Adjusted gap for smaller screens */
   }
 
   .aboutItem {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 20px; /* Adjusted padding for smaller screens */
+  }
+
+  .aboutItem h3 {
+    font-size: 22px; /* Reduced font size */
+  }
+
+  .aboutItem p {
+    font-size: 18px; /* Reduced font size */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 20px 10px; /* Further adjusted padding */
+  }
+
+  .aboutItems {
+    gap: 20px; /* Further adjusted gap for very small screens */
+  }
+
+  .aboutItem {
+    padding: 15px; /* Further adjusted padding */
+  }
+
+  .aboutItem h3 {
+    font-size: 20px; /* Further reduced font size */
+  }
+
+  .aboutItem p {
+    font-size: 16px; /* Further reduced font size */
   }
 }
