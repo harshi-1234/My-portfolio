@@ -151,11 +151,14 @@
   .historyItemDetails ul {
     font-size: 18px; /* Reduced size */
   }
+  .title {
+    font-size: 25px; /* Reduced font size */
+  }
 }
 
 @media screen and (max-width: 480px) {
   .skills {
-    grid-template-columns: repeat(2, 1fr); /* Adjusted to two columns for smaller screens */
+    grid-template-columns: repeat(3, 1fr); /* Adjusted to two columns for smaller screens */
   }
 
   .skillImageContainer {
@@ -189,5 +192,8 @@
 
   .historyItemDetails ul {
     font-size: 16px; /* Further reduced size */
+  }
+  .title {
+    font-size: 24px; /* Reduced font size */
   }
 }

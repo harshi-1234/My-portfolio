@@ -93,16 +93,12 @@
 
 @media screen and (max-width: 830px) {
   .container {
-    flex-direction: column;
-    align-items: center; /* Center align content for smaller screens */
-    margin-left: 5%; /* Reduced margin for smaller screens */
-    margin-right: 5%; /* Reduced margin for smaller screens */
+    flex-direction: column-reverse;
   }
 
   .content {
     align-items: center;
-    max-width: 100%; /* Ensure content does not overlap */
-    text-align: center; /* Center align text for smaller screens */
+    max-width: 90%; /* Ensure content does not overlap */
   }
 
   .title {
@@ -120,17 +116,22 @@
   }
 
   .heroImg {
-    width: 70%; /* Adjusted width for smaller screens */
-    max-width: 250px; /* Adjusted maximum width for smaller screens */
-  }
-
-  .topBlur,
-  .bottomBlur {
-    display: none; /* Hide blur effects for smaller screens */
+    width: 80%;
+    max-width: 200px; /* Maximum width for small screens */
   }
 }
 
 @media screen and (max-width: 480px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .content {
+    align-items: flex-start;
+    max-width: 60%;
+  }
+
   .title {
     font-size: 30px; /* Further reduced font size */
   }
@@ -146,7 +147,9 @@
   }
 
   .heroImg {
-    width: 80%; /* Further adjusted width for very small screens */
-    max-width: 200px; /* Further adjusted maximum width for very small screens */
+    width: 30%;
+    max-width: 100px; /* Adjusted maximum width for very small screens */
+    border-radius: 50%; /* Make the image circular */
+    margin-left: 10px; /* Add some space between the image and the text */
   }
 }
