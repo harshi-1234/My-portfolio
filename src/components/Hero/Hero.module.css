@@ -17,6 +17,7 @@
   align-items: flex-start;
   color: var(--color-text);
   z-index: 1;
+  max-width: 60%; /* Adjusted to reduce space on larger screens */
 }
 
 .title {
@@ -37,8 +38,9 @@
   font-size: 24px; /* Adjusted font size */
   font-weight: 400; /* Adjusted font weight */
   font-family: var(--font-roboto);
-  margin-bottom: 52px;
-  max-width: 600px; /* Added to limit width and improve readability */
+  margin-bottom: 20px; /* Reduced margin-bottom */
+  /* max-width: 600px */
+  max-width: 100%; /* Ensure it does not exceed container width */
 }
 
 .contactBtn {
@@ -53,8 +55,8 @@
 }
 
 .heroImg {
-  width: 30%; /* Adjusted width for a smaller image */
-  max-width: 250px; /* Added max-width for responsiveness */
+  width: 35%; /* Adjusted width for a smaller image */
+  max-width: 300px; /* Added max-width for responsiveness */
   z-index: 1;
   border-radius: 20px; /* Rounded corners */
   height: auto; /* Maintain aspect ratio */
