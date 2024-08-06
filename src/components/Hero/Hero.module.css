@@ -88,7 +88,7 @@
 
 @media screen and (max-width: 830px) {
   .container {
-    flex-direction: column-reverse;
+    flex-direction: column; /* Stack elements vertically */
   }
 
   .content {
@@ -118,14 +118,13 @@
 
 @media screen and (max-width: 480px) {
   .container {
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column; /* Ensure elements are stacked vertically */
   }
 
   .content {
     align-items: flex-start;
     max-width: 60%;
-    order: 2; /* Ensure content is ordered correctly */
+    margin-bottom: 20px; /* Space between content and image */
   }
 
   .title {
@@ -145,8 +144,7 @@
   .heroImg {
     width: 30%;
     max-width: 100px; /* Adjusted maximum width for very small screens */
-    border-radius: 10px; /* Make the image circular */
-    margin-left: 10px; /* Add some space between the image and the text */
-    order: 1; /* Ensure image is ordered correctly */
+    border-radius: 10px; /* Keep the image square */
+    margin-top: 20px; /* Space between the paragraph and image */
   }
 }
