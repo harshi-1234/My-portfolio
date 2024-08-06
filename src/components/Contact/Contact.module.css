@@ -50,6 +50,7 @@
   .container {
     flex-direction: column;
     gap: 23px;
+    padding: 40px 5%; /* Adjusted padding for smaller screens */
   }
 
   .text {
@@ -58,7 +59,43 @@
     align-items: center;
   }
 
+  .text h2 {
+    font-size: 50px; /* Reduced font size */
+    font-weight: 600; /* Reduced font weight */
+    letter-spacing: 2px;
+  }
+
+  .text p {
+    font-size: 20px; /* Reduced font size */
+    font-weight: 300; /* Reduced font weight */
+    letter-spacing: 1px;
+  }
+
   .links {
     align-items: center;
+  }
+
+  .link a {
+    font-size: 20px; /* Reduced font size */
+    font-weight: 300; /* Reduced font weight */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text h2 {
+    font-size: 40px; /* Further reduced font size */
+    font-weight: 500; /* Further reduced font weight */
+    letter-spacing: 1px;
+  }
+
+  .text p {
+    font-size: 18px; /* Further reduced font size */
+    font-weight: 300;
+    letter-spacing: 0.5px;
+  }
+
+  .link a {
+    font-size: 18px; /* Further reduced font size */
+    font-weight: 300;
   }
 }
