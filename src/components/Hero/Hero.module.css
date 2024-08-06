@@ -107,6 +107,8 @@
   .description {
     font-size: 20px; /* Reduced font size */
     margin-bottom: 30px; /* Reduced margin */
+    line-height: 1.6; /* Adjust line height for better readability on smaller screens */
+    text-align: center; /* Center align text for smaller screens */
   }
 
   .contactBtn {
@@ -131,8 +133,10 @@
   }
 
   .description {
-    font-size: 18px; /* Further reduced font size */
-    margin-bottom: 20px; /* Further reduced margin */
+    font-size: 20px; /* Reduced font size */
+    margin-bottom: 30px; /* Reduced margin */
+    line-height: 1.6; /* Adjust line height for better readability on smaller screens */
+    text-align: center; /* Center align text for smaller screens */
   }
 
   .contactBtn {
