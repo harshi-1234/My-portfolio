@@ -88,6 +88,7 @@
 
 @media screen and (max-width: 830px) {
   .container {
+    display: flex;
     flex-direction: column;
     align-items: center; /* Center align content for smaller screens */
     margin-left: 5%; /* Reduced margin for smaller screens */
@@ -95,6 +96,7 @@
   }
 
   .content {
+    display: flex;
     align-items: center;
     max-width: 100%; /* Ensure content does not overlap */
     text-align: center; /* Center align text for smaller screens */
