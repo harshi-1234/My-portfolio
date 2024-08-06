@@ -101,6 +101,7 @@
   .content {
     align-items: center;
     text-align: center; /* Center align text for smaller screens */
+    max-width: 90%; /* Adjusted for smaller screens */
   }
 
   .title {
@@ -110,9 +111,7 @@
   .description {
     font-size: 20px; /* Reduced font size */
     margin-bottom: 30px; /* Reduced margin */
-    max-width: 90%; /* Adjusted width for smaller screens */
-    line-height: 1.4; /* Maintain line height */
-    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    max-width: 80%; /* Adjusted width for smaller screens */
   }
 
   .contactBtn {
@@ -132,6 +131,17 @@
 }
 
 @media screen and (max-width: 480px) {
+  .container {
+    margin-left: 5%; /* Reduced margin for small screens */
+    margin-right: 5%; /* Reduced margin for small screens */
+  }
+
+  .content {
+    align-items: center;
+    text-align: center; /* Center align text for very small screens */
+    max-width: 90%; /* Increased to fit better */
+  }
+
   .title {
     font-size: 30px; /* Further reduced font size */
   }
@@ -140,7 +150,7 @@
     font-size: 18px; /* Further reduced font size */
     margin-bottom: 15px; /* Further reduced margin */
     max-width: 90%; /* Ensure proper width on very small screens */
-    -webkit-line-clamp: 3; /* Limit to 2 lines */
+    line-height: 1.4; /* Maintain line height */
   }
 
   .contactBtn {
@@ -150,6 +160,12 @@
 
   .heroImg {
     width: 70%; /* Further adjusted width for very small screens */
-    max-width: 150px; /* Further adjusted maximum width for very small screens */
+    max-width: 180px; /* Further adjusted maximum width for very small screens */
+  }
+
+  .topBlur,
+  .bottomBlur {
+    display: none; /* Hide blur effects for very small screens */
   }
 }
+
