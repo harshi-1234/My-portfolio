@@ -110,7 +110,7 @@
 
   .skills {
     width: 100%;
-    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr); /* Adjusted to three columns for medium screens */
     justify-content: center;
   }
 
@@ -154,6 +154,10 @@
 }
 
 @media screen and (max-width: 480px) {
+  .skills {
+    grid-template-columns: repeat(2, 1fr); /* Adjusted to two columns for smaller screens */
+  }
+
   .skillImageContainer {
     width: 75px; /* Further reduced size */
     height: 75px; /* Further reduced size */
