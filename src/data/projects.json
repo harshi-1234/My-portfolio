@@ -5,7 +5,7 @@
     "description": "Created a responsive portfolio website with React and Tailwind CSS, featuring interactive elements, animations, and a clean design.",
     "skills": ["React", "Tailwind CSS"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://harshithakankatala.netlify.app/"
   },
   {
     "title": "MERN Social Website",
@@ -29,7 +29,7 @@
     "description": "Set up a WordPress site on AWS using EC2 and RDS, ensured public access with Route 53, and implemented high availability with ASG in a VPC, showcasing AWS management skills.",
     "skills": ["Aws","Ec2","Rds","Route53","Wordpress"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/harshi-1234/Wordpressdeployment"
   },
   {
     "title": "Serverless web application on AWS ",
@@ -37,7 +37,7 @@
     "description": "Developed and deployed a serverless web app on AWS using Lambda, API Gateway, and DynamoDB, implementing scalable and cost-efficient architecture.",
     "skills": ["Aws Lambda", "Api Gateway", "DynamoDB"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/harshi-1234/ServerlessApplication"
   },
   {
     "title": "Article Contributor, Geeks for Geeks",

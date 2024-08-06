@@ -5,17 +5,19 @@
   flex-direction: column;
   border-radius: 10px;
   background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
-  box-shadow: 0 16px 14px 0 #04152d;
+  box-shadow: 0 16px 14px 0 hsl(215, 84%, 10%);
   padding: 18px 24px;
   max-width: 345px;
-  min-height: 500px; /* Adjust this value as needed */
+  height: 500px; /* Set a fixed height for all cards */
   transition: background-image 0.4s ease ,  transform 0.4s ease, box-shadow 0.4s ease;
   position: relative; /* Added for the pseudo-element */
   overflow: hidden; /* Ensures pseudo-element stays within bounds */
   box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Ensures spacing between items */
+  justify-content: space-between;
+  text-decoration: none; /* Remove default anchor text decoration */
+  color: inherit; /* Ensure text color inherits from the parent */
 }
 
 .container::before {
@@ -48,48 +50,62 @@
 
 
 .image {
-  margin-bottom: 26px;
+  /* 26 */
+  margin-bottom: 16px;
   z-index: 2; /* Ensure image is above pseudo-element */
 }
 
 .title {
-  font-size: 25px;
+  /* 25 */
+  font-size: 20px;
   font-weight: 700;
-  min-height: 50px; 
+  /* min-height: 50px;  */
   z-index: 2; /* Ensure title is above pseudo-element */
+  margin-bottom: 10px; /* Add some margin to separate title from other elements */
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto; /* Enable vertical scrolling */
+  margin-bottom: 10px;
 }
 
 .description {
-  margin-top: 6px;
-  font-size: 25px;
+  /* margin-top: 6px; */
+  font-size: 14px;
   font-weight: 400;
-  min-height: 80px; /* Ensure description has a minimum height */
+  /* max-height: 80px; 
+  overflow: hidden; 
+  text-overflow: ellipsis;  */
   z-index: 2; /* Ensure description is above pseudo-element */
+  margin-bottom: 10px; /* Add some margin to separate description from other elements */
 }
 
 .skills {
   width: 100%;
-  margin-top: 14px;
+  /* margin-top: 14px; */
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   flex-wrap: wrap;
   gap: 6px;
   list-style: none;
   z-index: 2; /* Ensure skills are above pseudo-element */
+  margin-bottom: 10px; /* Add some margin to separate skills from other elements */
 }
 
 .skill {
-  font-size: 25px;
+  font-size: 12px;
   font-weight: 400;
   border-radius: 100px;
   background: var(--color-dark);
-  padding: 2px 22px;
+  /* 2px 22px */
+  padding: 2px 8px;
   z-index: 2; /* Ensure skill items are above pseudo-element */
 }
 
 .links {
   width: 100%;
-  margin-top: 26px;
+  /* margin-top: 26px; */
   display: flex;
   justify-content: space-around;
   z-index: 2; /* Ensure links are above pseudo-element */
@@ -107,11 +123,12 @@
 .link {
   text-decoration: none;
   color: var(--color-text);
-  font-size: 30px;
+  font-size: 14px;
   font-weight: 600;
   border-radius: 100px;
   background: var(--color-primary);
-  padding: 1px 22px;
+  /* 1px 22px */
+  padding: 5px 15px;
   z-index: 2; /* Ensure link items are above pseudo-element */
   transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
 }
@@ -119,4 +136,11 @@
 .link:hover {
   background-color: var(--color-primary-dark); /* Darker background on hover */
   transform: scale(1.05); /* Slightly scales up on hover */
+}
+
+/* Ensure content inside the card is scrollable */
+.content {
+  flex: 1;
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-right: 10px; /* Provide padding for the scrollbar */
 }

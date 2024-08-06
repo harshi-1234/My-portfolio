@@ -20,8 +20,9 @@ body {
   font-family: var(--font-primary);
   color: var(--color-text); /* Ensure text color is applied */
   background-color: var(--color-bg); /* Ensure background color is applied */
-  font-size: 5px; /* Uniform font size for everything */
+  font-size: 14px; /* Uniform font size for everything */
   font-weight: 300; /* Lighter font weight */
+  line-height: 1.5; /* Better readability */
 }
 
 h1, h2, h3, h4, h5, h6, p, a, span, div {
@@ -32,16 +33,16 @@ h1, h2, h3, h4, h5, h6, p, a, span, div {
 
 /* Optional: Customize sizes and weights for specific elements */
 h1 {
-  font-size: 18px; /* Reduced size for headings */
+  font-size: 2em; /* Reduced size for headings */
   font-weight: 400; /* Light weight for headings */
 }
 
 h2 {
-  font-size: 16px; /* Reduced size for sub-headings */
+  font-size: 1.75em; /* Reduced size for sub-headings */
   font-weight: 400; /* Light weight for sub-headings */
 }
 
 p, a, span, div {
-  font-size: 10px; /* Further reduced size for other text */
+  font-size: 1em; /* Further reduced size for other text */
   font-weight: 300; /* Light weight for other text */
 }
