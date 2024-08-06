@@ -9,7 +9,6 @@
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
-  flex-wrap: wrap; /* Allow wrapping to prevent overlap */
 }
 
 .content {
@@ -18,11 +17,10 @@
   align-items: flex-start;
   color: var(--color-text);
   z-index: 1;
-  max-width: 70%; /* Ensure content does not overlap */
 }
 
 .title {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 900;
   margin-bottom: 33px;
   font-family: var(--font-roboto);
@@ -36,9 +34,11 @@
 }
 
 .description {
-  font-size: 23px;
+  font-size: 24px; /* Adjusted font size */
+  font-weight: 400; /* Adjusted font weight */
   font-family: var(--font-roboto);
   margin-bottom: 52px;
+  max-width: 600px; /* Added to limit width and improve readability */
 }
 
 .contactBtn {
@@ -46,19 +46,21 @@
   background-color: var(--color-primary);
   color: var(--color-text);
   border-radius: 100px;
-  font-size: 2em;
+  font-size: 30px;
   font-weight: 600;
   padding: 17px 26px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .heroImg {
-  width: 40%;
-  max-width: 300px;
+  width: 30%; /* Adjusted width for a smaller image */
+  max-width: 250px; /* Added max-width for responsiveness */
   z-index: 1;
-  border-radius: 30px; /* Adjust the radius as needed */
-  height: auto; /* Adjust as needed */
+  border-radius: 20px; /* Rounded corners */
+  height: auto; /* Maintain aspect ratio */
 }
+
+
 
 .topBlur {
   position: absolute;
@@ -78,6 +80,7 @@
   width: 70vw;
   height: 50vw;
   min-width: 350px;
+  min-width: 250px;
   top: 246px;
   right: -25vw;
   border-radius: 764px;
@@ -88,17 +91,13 @@
 
 @media screen and (max-width: 830px) {
   .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center align content for smaller screens */
-    margin-left: 5%; /* Reduced margin for smaller screens */
-    margin-right: 5%; /* Reduced margin for smaller screens */
+    flex-direction: column-reverse;
+    margin-left: 5%; /* Adjusted for smaller screens */
+    margin-right: 5%; /* Adjusted for smaller screens */
   }
 
   .content {
-    display: flex;
     align-items: center;
-    max-width: 100%; /* Ensure content does not overlap */
     text-align: center; /* Center align text for smaller screens */
   }
 
@@ -109,8 +108,7 @@
   .description {
     font-size: 20px; /* Reduced font size */
     margin-bottom: 30px; /* Reduced margin */
-    line-height: 1.6; /* Adjust line height for better readability on smaller screens */
-    text-align: center; /* Center align text for smaller screens */
+    max-width: 90%; /* Adjusted width for smaller screens */
   }
 
   .contactBtn {
@@ -119,8 +117,8 @@
   }
 
   .heroImg {
-    width: 70%; /* Adjusted width for smaller screens */
-    max-width: 250px; /* Adjusted maximum width for smaller screens */
+    width: 50%; /* Adjusted width for smaller screens */
+    max-width: 200px; /* Adjusted maximum width for smaller screens */
   }
 
   .topBlur,
@@ -135,10 +133,8 @@
   }
 
   .description {
-    font-size: 20px; /* Reduced font size */
-    margin-bottom: 30px; /* Reduced margin */
-    line-height: 1.6; /* Adjust line height for better readability on smaller screens */
-    text-align: center; /* Center align text for smaller screens */
+    font-size: 18px; /* Further reduced font size */
+    margin-bottom: 15px; /* Further reduced margin */
   }
 
   .contactBtn {
@@ -147,7 +143,7 @@
   }
 
   .heroImg {
-    width: 80%; /* Further adjusted width for very small screens */
-    max-width: 200px; /* Further adjusted maximum width for very small screens */
-  }
+    width: 70%; /* Further adjusted width for very small screens */
+    max-width: 150px; /* Further adjusted maximum width for very small screens */
+  }
 }
