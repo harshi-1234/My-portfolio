@@ -111,6 +111,8 @@
     font-size: 20px; /* Reduced font size */
     margin-bottom: 30px; /* Reduced margin */
     max-width: 90%; /* Adjusted width for smaller screens */
+    line-height: 1.4; /* Maintain line height */
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
   }
 
   .contactBtn {
@@ -137,6 +139,8 @@
   .description {
     font-size: 18px; /* Further reduced font size */
     margin-bottom: 15px; /* Further reduced margin */
+    max-width: 90%; /* Ensure proper width on very small screens */
+    -webkit-line-clamp: 3; /* Limit to 2 lines */
   }
 
   .contactBtn {
