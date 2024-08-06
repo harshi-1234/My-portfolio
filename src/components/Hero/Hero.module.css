@@ -58,16 +58,12 @@
   z-index: 1;
   border-radius: 30px; /* Adjust the radius as needed */
   height: auto; /* Adjust as needed */
-
 }
-
-
 
 .topBlur {
   position: absolute;
   width: 50vw;
   height: 50vw;
-  min-width: 350px;
   min-width: 350px;
   top: -128px;
   left: -10vw;
@@ -82,7 +78,6 @@
   width: 70vw;
   height: 50vw;
   min-width: 350px;
-  min-width: 250px;
   top: 246px;
   right: -25vw;
   border-radius: 764px;
@@ -123,13 +118,14 @@
 
 @media screen and (max-width: 480px) {
   .container {
-    flex-direction: row;
+    flex-direction: column; /* Change flex direction to column */
     align-items: center;
+    text-align: center; /* Center align text */
   }
 
   .content {
-    align-items: flex-start;
-    max-width: 60%;
+    align-items: center;
+    max-width: 90%; /* Increase max-width */
   }
 
   .title {
@@ -150,6 +146,6 @@
     width: 30%;
     max-width: 100px; /* Adjusted maximum width for very small screens */
     border-radius: 50%; /* Make the image circular */
-    margin-left: 10px; /* Add some space between the image and the text */
+    margin: 10px 0; /* Add some space around the image */
   }
 }
