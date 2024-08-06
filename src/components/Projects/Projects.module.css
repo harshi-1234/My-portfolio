@@ -24,34 +24,3 @@
   gap: 15px;
   width: 100%;
 }
-
-@media screen and (max-width: 830px) {
-  .container {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .title {
-    font-size: 28px; /* Reduced font size */
-  }
-
-  .projects {
-    gap: 10px; /* Reduced gap between project cards */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .container {
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-  }
-
-  .title {
-    font-size: 24px; /* Further reduced font size */
-  }
-
-  .projects {
-    flex-direction: column; /* Stack project cards vertically */
-    align-items: stretch; /* Stretch project cards to fill container */
-  }
-}
